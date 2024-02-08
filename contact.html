@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .container-2
+        {
+            width: 80%;
+            margin: 50px auto;
+        
+        }
+        .contact-box{
+            background: #fff;
+            display: flex;
+        }
+        .contact-left
+        {
+            flex-basis: 60%;
+            padding: 40px 60px;
+            background: radial-gradient(#fff,#02c5f6);
+            color: #000;
+            border-radius: 20px;
+        }
+        .contact-right
+        {
+            flex-basis: 40%;
+            padding: 40px;
+            background: #000;
+            color: #fff;
+            border-radius: 20px;
+        }
+        .container-2 p
+        {
+            margin-bottom: 40px;
+        }
+        .input-row
+        {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom:20px;
+        }
+        .input-row .input-group
+        {
+            flex-basis: 45%;
+        }
+        .input
+        {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #02c5f6;
+            outline: #02c5f6;
+            padding-bottom: 5px;
+        }
+        textarea 
+        {
+            width: 100%;
+            border: 1px solid #ccc;
+            outline: none;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        label
+        {
+            margin-bottom: 6px;
+            display: block;
+            color: #000;
+        }
+        .contact-left h3
+        {
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .contact-right h3
+        {
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        .btn-2
+        {
+	    display: inline-block;
+	    background: #02c5f6;
+	    color: #fff;
+	    padding: 8px 30px;
+	    margin: 30px 0;
+	    border-radius: 30px;
+	    transition: background 0.5s;
+        }
+        .btn-2:hover
+        {
+	        background: #000000;
+        }
+        tr td:first-child
+        {
+            padding-right: 20px;
+        }
+        tr td
+        {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="200px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="aboutUs.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    <!--Title of page-->
+    <div class="categories">
+		<h1 class="title">Connect With Us</h1>
+	</div>
+    <!--Form-->
+    <div class="container-2">
+        <p style="text-align: center;">We would love to respond to your queries and help you seek.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Sent your request</h3>
+                <form name="myform" onsubmit="validate()">
+                    <div class="input-row">
+                       <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name" name="name">
+                       </div> 
+                       <div class="input-group">
+                        <label>Phone</label>
+                        <input type="text" placeholder="+977 XXXX XXXX XX" name="Phone">
+                       </div> 
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                         <label>Email</label>
+                         <input type="email" placeholder="abc@gmail.com" name="mail">
+                        </div>  
+                     </div>
+                     <label>Message</label>
+                     <textarea rows="5" cols="5" placeholder="Your Message" name="Message"></textarea>
+                     <input type="submit" value="Send" class="btn-2">
+                </form>
+                
+                
+            </div>
+            <div class="contact-right">
+                <h3 style="color: white;">Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email : </td>
+                        <td>Contactus@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone : </td>
+                        <td>+977 XXXX XXXX XX</td>
+                    </tr>
+                    <tr>
+                        <td>Address : </td>
+                        <td>Online PLatform</td>
+                    </tr>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png" alt="">
+                    </div>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--Footer-->
+
+
+
+    <div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download our App</h3>
+					<p>Download App for Andriod and Ios.</p>
+					<div class="app-logo">
+						<img src="images/play-store.png" alt="">
+						<img src="images/app-store.png" alt="">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<a href=""><img src="images/logo-white.png" alt=""></a>
+					<p>Our Purpose Is to provide Great quality service to the many.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Twitter</li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<p class="Copyright">&copy;Copyright 2024 - ImpriméInnovate All Rights Reserved</p>
+</body>
+
+    <!--js for toggle menu-->
+	<script src="menu.js">
+		
+	</script>
+
+    <!--js for form validation-->
+    <script type="text/javascript">
+        function validate()
+        {
+            var name = document.forms['myform']['name'].value;
+            var Phone = document.forms['myform']['Phone'].value;
+            var mail = document.forms['myform']['mail'].value;
+            var Message = document.forms['myform']['Message'].value; 
+            if (name==""||Phone==""||mail==""||Message=="")
+            {
+                alert("Empty field found")
+            }
+            else
+            {
+                alert("Thank you for sending Feedback")
+            }
+        }
+    </script>
+</html>
